@@ -1,0 +1,319 @@
+@font-face {
+    font-family: bandeins;
+    src: url("./FontsFree-Net-BandeinsStrangeVariable\ \(1\).ttf");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:bandeins;
+}
+html,
+body{
+   height: 100%;
+   width: 100%;
+}
+#main{
+    position: relative;
+    overflow-x: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(0, 0, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fullScreenNav{
+    height: 100vh;
+    top: 0;
+    background-color: rgb(0, 0, 215);
+    width: 100vw;
+    position: absolute;
+
+    left: -100vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#nav{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 0 100px;
+}
+#nav>h1{
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+#menu{
+    height: 65px;
+    width: 65px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid aqua;
+}
+#back{
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid aqua;
+}
+#page2{
+    width: 100vw;
+    min-height: 100vh;
+    perspective: 2000px;
+
+    background-color: #fff;
+}
+
+#left{
+    height: 100vh;
+    width: 60vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+#right{
+    height: 100vh;
+    width: 40vw;
+    overflow: hidden;
+    position: relative;
+}
+#rightPart1{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#right img{
+    height: 142px;
+    margin: 10px 25px;
+    position: relative;
+    mix-blend-mode: exclusion;
+}
+#right #img7 , #right #img8{  
+    height: 44px;
+}
+#right #img10{
+    height: 130px;
+    margin-left: 10vw;
+}
+#left>h1{
+    /* font-size: 106px; */
+    font-size: 7vw;
+    font-weight: 400;
+    margin-left: 10vw;
+    line-height: 113px;
+    overflow: hidden;
+    letter-spacing: 3px;
+}
+#left>h1:nth-child(2){
+    font-style: italic;
+}
+#left>h1:nth-child(3){
+    margin-bottom: 11vh;
+}
+#page2>h2{
+    color: rgb(0, 0, 215);
+    font-size: 50px;
+    margin-top: 10vh;
+    width: 70vw;
+    line-height: 70px;
+    font-weight: 100;
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+}
+
+.page2Img{
+    height: 80vh;
+    width: 80vw;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vh;
+    position: relative;
+
+    overflow: hidden;
+    
+}
+.page2Img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page2Img>h3{
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    color: white;
+    font-size: 30px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+@media (max-width:600px) {
+    #nav{
+        display: flex;
+        position: absolute;
+        top: 10%;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        padding: 0 5vw;
+    }
+    #nav>h1{
+        /* font-size: 35px; */
+        font-size: 22px;
+        color: white;
+        font-weight: 500;
+    }
+    #menu{
+        height: 35px;
+        width: 35px;
+        letter-spacing: 1px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid aqua;
+    }
+    #back{
+        height: 60px;
+        width: 60px;
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid aqua;
+    }
+    #page2{
+        width: 100vw;
+        min-height: 100vh;
+        perspective: 2000px;
+    
+        background-color: #fff;
+    }
+    
+    #left{
+        height: 100vh;
+        width: 100vw;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    #right{
+        height: 100vh;
+        width: 100vw; 
+        overflow: hidden;
+        position: absolute;
+    }
+    #rightPart1{
+        height: 100%;
+        width: 100%;
+        /* background-color: red; */
+    }
+    #right img{
+        height: 142px;
+        margin: 10px 25px;
+        position: relative;
+        mix-blend-mode: exclusion;
+    }
+    #right #img7 , #right #img8{  
+        height: 44px;
+    }
+    #right #img10{
+        height: 130px;
+        margin-left: 10vw;
+    }
+    #left>h1{
+        /* font-size: 106px; */
+        font-size: 15vw;
+        font-weight: 400;
+        margin-left: 10vw;
+        line-height: 80px;
+        overflow: hidden;
+        letter-spacing: 3px;
+    }
+    #left>h1:nth-child(2){
+        font-style: italic;
+    }
+    #left>h1:nth-child(3){
+        margin-bottom: 11vh;
+    }
+    #page2>h2{
+        color: rgb(0, 0, 215);
+        font-size: 50px;
+        margin-top: 10vh;
+        width: 70vw;
+        line-height: 70px;
+        font-weight: 100;
+        margin-left: 5vw;
+        margin-bottom: 10vh;
+    }
+    
+    .page2Img{
+        height: 80vh;
+        width: 80vw;
+        background-color: red;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20vh;
+        position: relative;
+    
+        overflow: hidden;
+        
+    }
+    .page2Img>img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .page2Img>h3{
+        position: absolute;
+        bottom: 10%;
+        left: 8%;
+        color: white;
+        font-size: 30px;
+        word-spacing: 10px;
+        letter-spacing: 2px;
+    }
+}
