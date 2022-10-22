@@ -50,7 +50,7 @@ gsap.from("#page2Img1",{
     scrollTrigger:{
         trigger:"#page2Img1",
         scroller:"#main",
-        markers:true,
+        // markers:true,
         start:"top 70%",
         // scrub:true
     },
